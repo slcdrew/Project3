@@ -1,0 +1,35 @@
+{
+  "name": "Pet-Cern",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "connect-mongo": "^2.0.3",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.6",
+    "jquery-file-upload-middleware": "^0.1.8",
+    "mongo": "^0.1.0",
+    "mongodb": "^3.1.12",
+    "mongoose": "^5.4.5",
+    "multer": "^1.4.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slcdrew/Project3"
+  },
+  "keywords": [],
+  "author": "Andrew Pederson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/slcdrew/Project3"
+  },
+  "homepage": "https://github.com/slcdrew/Project3"
+}

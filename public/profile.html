@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="apple-mobile-web-app-title" content="PET-CERN">
+
+        <title>Pet-Cern</title>
+
+    <!-- Material Icon CDN -->
+         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Materialize CSS CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+    <!-- Your custom styles -->
+        <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Favicon -->
+        <link rel="icon" type="image/png" sizes="16x16" href="./images/logos/PetCernMini.png"></link>
+      
+    <!-- End of head script and link tags -->
+
+    <style>
+      body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        }
+      main {
+        flex: 1 0 auto;
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+    <header>
+
+    <!-- Full Size Menu Location -->
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <div class="container center">
+                    <a href="" class="brand-logo center"><img class="brand-logo" src="./images/logos/petcernlogo.png" width="" height="50px"></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- End of where full size menu would go -->
+
+    </header>
+
+    <main>
+        <!-- pre loader -->
+        <div class="preloader-background">
+                <div class="preloader-wrapper big active">
+                    <div class="spinner-layer spinner-blue-only">
+                        <div class="circle-clipper left">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="gap-patch">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="circle-clipper right">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- end -->
+        <!-- Your content here -->
+    <div>
+        <!-- Main Card -->
+        <div class="row">
+            <div class="col s3">
+                <div class="card horizontal">
+                    <div class="card-image">
+                        <!-- <img src="./images/profile/AddAnImageOfYou.JPG"> -->
+                    </div>
+                    <div class="col s9">
+                        <div class="card-stacked">
+                        <div class="card-content">
+                            <h5 class="your-name">Norah the Cat</h5>
+                        </div>
+                            <!-- end T2 content -->
+                        </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col s12 profile-tiers pop">
+            <ul class="collapsible popout" data-collapsible="accordion">
+                <li>
+                    <!-- Tier 3 Info -->
+                    <div class="collapsible-header"><i class="material-icons">add</i>Pet Info</div>
+                    <div class="collapsible-body">
+                        <!-- 1 -->
+                        <a onclick="myFunction('dnr')" class="btn-floating black right" type="submit" name="action"><i class="material-icons">edit</i></a>
+                        <br>
+                        <br>
+                        <br>
+                        <b><span>Lorem ipsum dolor sit amet, tale suas nec an. Ex sed erant accusata instructior, mel altera sanctus an. Usu ea suas oratio soluta, ex vel scripta definitiones, brute malis novum pri ea. Ea inermis platonem consectetuer qui. Ius ei odio maiorum facilisis, tempor theophrastus eu duo. Ne meis neglegentur cum, ut nisl singulis mediocritatem vis, dolor oratio mel ea. </span></b>
+                        <br>
+                        <br>
+                        <span style="background-color:rgba(252, 226, 80, 0.523)" id="dnr" contenteditable="false">Lorem ipsum dolor sit amet, tale suas nec an. Ex sed erant accusata instructior, mel altera sanctus an.</span>
+                        <div class="divider"></div>
+                        <br>
+                        <br>
+                        <!-- 2 -->
+                        <a onclick="myFunction('od')" class="btn-floating black right" type="submit" name="action"><i class="material-icons">edit</i></a>
+                        <br>
+                        <br>
+                        <br>
+                        <b><span>Lorem ipsum dolor sit amet, tale suas nec an. Ex sed erant accusata instructior, mel altera sanctus an.</span></b>
+                        <br>
+                        <br>
+                        <span style="background-color:rgba(252, 226, 80, 0.523)" id="od" contenteditable="false">Lorem ipsum dolor sit amet, tale suas nec an. Ex sed erant accusata instructior, mel altera sanctus an.</span>
+                        <div class="divider"></div>
+                        <br>
+                        <br>
+                        <!-- 3 -->
+                        <a onclick="myFunction('rel')" class="btn-floating black right" type="submit" name="action"><i class="material-icons">edit</i></a>
+                        <br>
+                        <br>
+                        <br>
+                        <b><span>Lorem ipsum dolor sit amet, tale suas nec an. Ex sed erant accusata instructior, mel altera sanctus an.</span></b>
+                        <br>
+                        <br>
+                        <span style="background-color:rgba(252, 226, 80, 0.523)" id="rel" contenteditable="false">Lorem ipsum dolor sit amet, tale suas nec an. Ex sed erant accusata instructior, mel altera sanctus an.</span>
+                        <div class="divider"></div>
+                        <br>
+                        <br>
+                        <span>Click the SAVE button ></span><a href="#!" class="btn-floating black right" type="submit" name="action"><i class="material-icons left">save</i></a>
+                        <br>
+                    </div>
+                </li>
+               
+        </div>
+        </div>
+        <!-- End of Card  -->
+
+        <div class="fixed-action-btn toolbar ">
+                <a class="btn-floating pulse btn-large blue">
+                <i class="large material-icons">menu</i>
+                </a>
+                <ul>
+                <li class="waves-effect waves-light"><a href="main.html" class="tooltipped" data-position="top" data-delay="50" data-tooltip="Go Home"><i class="material-icons">home</i></a></li>
+                <li class="waves-effect waves-light"><a href="addother.html" class="tooltipped" data-position="top" data-delay="50" data-tooltip="Add a Love One"><i class="material-icons">add</i></a></li>
+                <li class="waves-effect waves-light"><a href="resources.html" class="tooltipped" data-position="top" data-delay="50" data-tooltip="Resources"><i class="material-icons">format_list_bulleted</i></a></li>
+                <li class="waves-effect waves-light"><a href="logout" class="tooltipped" data-position="top" data-delay="50" data-tooltip="Sign Out"><i class="material-icons">close</i></a></li>
+                </ul>
+            </div>
+    </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="page-footer white">
+
+    <div class="footer-copyright">
+        <div class="container grey-text" align="center">
+          © 2019 AMP
+        </div>
+    </div>
+
+    </footer>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <!-- Materialize JS CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <!-- Local JS files -->
+        <script src="./js/index.js"></script>
+        <script src="./js/type.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+.nav-wrapper{
+    background-color: white;
+}
+main{
+    background-color: white !important;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+p{
+    margin:0px !important;
+}
+i.icon-black {
+    color: black !important;
+}
+.brand-logo{
+    margin-top: 1px !important;
+    align-self: center;
+}
+.black-text{
+    color:black !important;
+}
+.card{
+    margin-top: px;
+    width: 390px;
+    max-width: 400px !important;
+    /* left: 50% !important; */
+}
+.main-page-card{
+    background-color: lightgray;
+}
+.welcome{
+    font-size: 24px;
+    align-content: center !important;
+}
+.landing-options{
+    align-content: center;
+    line-height: 20px;
+}
+.page-footer{
+    padding-top: 10px;
+}
+.footer-copyright{
+    background-color: white !important;
+    color:white;
+    font-size: 8px;
+}
+.material-form{
+    text-align: center !important;
+    margin: 0px !important;
+    /* padding: 10px !important; */
+    background: white !important;
+    max-width: 425px !important;
+    min-width: 400px !important;
+}
+.search-options{
+    padding: 0 15px 0 0;
+    line-height: 2px;
+}
+.search-result-title{
+    color:black;
+}
+.search{
+    background-color: transparent;
+}
+.modal-content{
+    padding:5px !important;
+}
+.carousel .carousel-item>img{
+    max-width: 375px !important;
+}
+.carousel-slider{
+    height: 450px !important;
+}
+.pulse::before{
+    animation-iteration-count: 5 !important;
+    }
+.card-action{
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+}
+.card-content{
+    padding-bottom: 2px !important;
+    padding-top: 2px !important;
+    padding-left: 2px !important;
+    padding-right: 2px !important;
+}
+.materialize-textarea{
+    margin-bottom: 0px !important;
+}
+.collapsible-body{
+    padding-top: 5px !important;
+}
+.pop{
+    max-width: 411px !important;
+    min-width: 411px !important;
+}
+.myIframe{
+    width: 400px !important;
+    height: 560px !important;
+}
+.media-heading{
+    margin-top: 0px !important;
+}
+.carousel-fixed-item.with-indicators {
+    bottom: 65px !important;
+}
+.preloader-background {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.tap-target {
+    color: #fff;
+  }

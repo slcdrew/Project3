@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="apple-mobile-web-app-title" content="Pet-Cern">
+
+  <title>Pet-Cern</title>
+
+  <!-- Material Icon CDN -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Materialize CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+  <!-- Your custom styles -->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/logos/PetCernMini.png"></link>
+
+  <!-- End of head script and link tags -->
+
+  <style>
+    body {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1 0 auto;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+
+    <!-- Full Size Menu Location -->
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper">
+          <div class="container center">
+            <a href="main.html" class="brand-logo center">
+              <img class="brand-logo" src="./images/logos/petcernlogo.png" width="" height="50px">
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- End of where full size menu would go -->
+
+  </header>
+
+  <main>
+    <!-- pre loader -->
+    <div class="preloader-background">
+        <div class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-blue-only">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- end -->
+    <form class="" id="profile" >
+    <!-- Your content here -->
+    <div>
+      <!-- Modal Structure -->
+      <div id="add-modal" class="modal">
+        <div class="modal-content">
+          <h4 align="center">Welcome to Pet-Cern</h4>
+
+          <h6>FMazim voluptatum at mei. Ei ius praesent constituam. Ad est putent vivendo consulatu. Id vitae everti sea, ea usu sint assentior democritum, est consul scripta nominavi at.
+            <br>
+            <br>Mazim voluptatum at mei. Ei ius praesent constituam. Ad est putent vivendo consulatu. Id vitae everti sea, ea usu sint assentior democritum, est consul scripta nominavi at.</h6>
+
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-action modal-close waves-effect blue btn">Lorem</a>
+        </div>
+      </div>
+
+      <!-- Main Card -->
+      <div class="col s12 s7">
+        <div class="card horizontal profile-pic grey lighten-5">
+          <div class="card-image">
+            <img id="photoPreview" src="./images/addform/AddPetIcon.png">
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <p>Add a picture of your pet!</p>
+              <br>
+              <br>
+
+                <div class="file-field input-field">
+                  <div class="waves-effect blue btn">
+                    <span>
+                      <i class="material-icons">photo_camera</i>
+                    </span>
+                    <input id="photo" type="file" accept="image/*"></input>
+                  </div>
+                  <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text"></input>
+                  </div>
+                </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End  -->
+      <!-- Main Card -->
+      <div class="col s12 s7">
+        <div class="card horizontal profile-pic grey lighten-5">
+          <div class="card-image">
+            <img src="./images/addform/calendarPetCern2.png">
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <p>When was your pet born?</p>
+              <br>
+              <br>
+              <input type="text" id="birthdate" class="datepicker">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End  -->
+      <!-- Main Card -->
+      <div class="col s12 s7">
+        <div class="card horizontal profile-pic grey lighten-5">
+          <div class="card-image">
+            <img src="./images/addform/locationPetCern.png">
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <p>What is your pet located?</p>
+              <div class="input-field col s12">
+                <textarea id="address" class="materialize-textarea"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End  -->
+      <!-- Main Card -->
+      <div class="col s12 s7">
+        <div class="card horizontal profile-pic grey lighten-5">
+          <div class="card-image">
+            <img src="./images/addform/PetCernVetLogo.png">
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <p>Who is your pet's veterinarian (include phone number and address)?</p>
+              <div class="input-field col s12">
+                <textarea id="phone" class="materialize-textarea"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End  -->
+      <!-- Main Card -->
+      <div class="col s12 s7">
+        <div class="card horizontal profile-pic grey lighten-5">
+          <div class="card-image">
+            <img src="./images/addform/PetCernMeds.png">
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <p>Does your pet take any medication? List it here.</p>
+              <div class="input-field col s12">
+                <textarea id="height" class="materialize-textarea"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End  -->
+      <!-- Main Card -->
+      <div class="col s12 s7">
+        <div class="card horizontal profile-pic grey lighten-5">
+          <div class="card-image">
+            <img src="./images/addform/PetCernTemperament.png">
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <p>Does your pet require any special treatment or care considerations?</p>
+              <div class="input-field col s12">
+                <textarea id="weight" class="materialize-textarea"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End  -->
+     
+      <!-- submit button -->
+      <div class="row center">
+        <div class="col s12">
+            <button class="waves-effect blue btn" id="submit-profile" ><i class="material-icons left">save</i>Save</button>
+        </div>
+      </div>
+
+    </div>
+    </form>
+  </main>
+  <!-- End Menu -->
+
+  <!-- Footer -->
+  <footer class="page-footer white">
+
+    <div class="footer-copyright">
+      <div class="container grey-text" align="center">
+        © 2019 Copyright AMP
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+
+  <!-- Materialize JS CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+  <!-- Local JS files -->
+  <script src="./js/index.js"></script>
+  <script src="./js/type.js"></script>
+  <script src="./js/profile.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="./js/cloudinary.js"></script>
+</body>
+
+</html>
