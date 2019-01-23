@@ -18,21 +18,24 @@ $(document).ready(function () {
         console.log("handle submit");
         event.preventDefault();
 
-    var birthdate = $("#birthdate").val().trim();
-    var address = $("#address").val().trim();
+    var photo //??
     var PetName = $("#PetName").val().trim();
-    var relationship = $("#relationship").val().trim();
-    var vet = $("#vet").val().trim();
-    var temperament = $("#temperament").val().trim();
+    var PetBreed = $("#PetBreed").val().trim();
+    var PetAge = $("#PetAge").val().trim();
+    var PetLocation = $("#PetLocation").val().trim();
+    var PetVet = $("#PetVet").val().trim();
+    var PetCare = $("#PetCare").val().trim();
+    var PetMeds = $("#PetMeds").val().trim();
 
     var newProfile = {
-      PetName: PetName,
-      relationship: relationship,
-      photo: photo,
-      birthdate: birthdate,
-      address: address,
-      vet: vet,
-      temperament: temperament
+        photo: photo,
+        PetName: PetName,
+        PetBreed: PetBreed,
+        PetAge: PetAge,
+        PetLocation: PetLocation,
+        PetVet: PetVet,
+        PetCare: PetCare,
+        PetMeds: PetMeds
     };
 
         console.log("New Profile " + JSON.stringify(newProfile))
@@ -45,10 +48,6 @@ $(document).ready(function () {
                     var profileId = {id: data._id};
                     console.log("profile id: ", profileId);
                     window.location.href = "/main.html"
-                    // $.post("/getprofile", profileId).then(function (res) {
-                    //     console.log("Hello");
-                    //     // res.redirect(307, "profile");
-                    //     window.location.href = "localhost:3000/profile";
          });
 
 
