@@ -99,4 +99,4 @@ $(`#sign-in`).on("click", function (event) {
 		window.location.href = "/main.html"
 	})	
 
-});
+}); 
