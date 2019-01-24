@@ -43,7 +43,7 @@ var PetSchema = new Schema({
         allowNull: true
     },
     
-    Profile: {type: mongoose.Schema.Types.ObjectId, ref: "Profile"} //should this be pet?? 
+    user: {type: mongoose.Schema.Types.ObjectId, ref: "User"} //should this be pet?? 
 
 });
 

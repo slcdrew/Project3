@@ -33,14 +33,31 @@ var UserSchema = new Schema({
     required: 'Email address is required',
     validate: [validateEmail, 'Please fill a valid email address'],
     match: [/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, 'Please fill a valid email address']
-},
+  },
 
   password: {
     type: String,
     required: true
   },
 
-  Profile: [{type: mongoose.Schema.Types.ObjectId, ref: "Profile"}]
+  address: {
+      type: String,
+      allowNull: false
+  },
+
+  // User info: Phone Number
+  phone: {
+    type: String,
+    allowNull: false
+  },
+
+  pets: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Pet"
+      }
+    ]
+
   
 });
 

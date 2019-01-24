@@ -8,7 +8,7 @@ module.exports = function (app) {
 
     let Users = [];
 
-    // app.post("/signup", userController.insert);
+    app.post("/login", userController.find);
     app.post('/signup', userController.insert)
 
     app.post("/api/add/:userId", function (req, res) {
@@ -37,7 +37,7 @@ module.exports = function (app) {
 
     app.post("/profile", profileController.insert);
 
-    app.get("/api/main/:userId", profileController.find);
+    app.get("/api/main/:userId", userController.findUserAndPets);
 
     app.delete("/delete/profile/:profileId", profileController.delete);
 

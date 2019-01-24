@@ -9,8 +9,8 @@ module.exports = {
             password: req.body.password
              }).then(function(data) {
             console.log("find controller" , data);
-            req.session.user.currentUser = {
-                id: data._id,
+            req.session.user = {
+                _id: data._id,
                 first_name: data.first_name,
                 last_name: data.last_name,
                 email: data.email,
@@ -29,8 +29,8 @@ module.exports = {
         console.log(req.body)
         User.create(req.body).then(function(data) {
             console.log(data, "coming from userlogin");
-            req.session.user.currentUser = {
-                id: data._id,
+            req.session.user = {
+                _id: data._id,
                 first_name: data.first_name,
                 last_name: data.last_name,
                 email: data.email,
@@ -61,5 +61,22 @@ module.exports = {
         }).catch(function(err) {
         res.json(err);
         });
+    },
+    findUserAndPets: function (req, res) {
+        User.findById(req.params.userId)
+        .populate("pets")
+        .then(function(userAndPetData) {
+            console.log(userAndPetData);
+            req.session.user = {
+                _id: userAndPetData._id,
+                first_name: userAndPetData.first_name,
+                last_name: userAndPetData.last_name,
+                email: userAndPetData.email,
+                pets: userAndPetData.pets
+            }
+            req.session.user.loggedIn = true;
+            req.session.user.isAdmin = false;
+            res.json(req.session.user)
+        })
     }
 };
