@@ -13,16 +13,30 @@ module.exports = function (app) {
 
     app.post("/api/add/:userId", function (req, res) {
         console.log(req.body)
-        db.Profile.create(req.body)
-            .then(function (data) {
-                console.log("Profilecontroller data: ", data);
+        //create pet
+        req.body.user = req.params.userId;
 
-                return db.User.findOneAndUpdate({_id: req.params.userId}, { $push: { Profile: data._id } }, { new: true })
-            }).then(function (userProfileData) {
+        db.Pet.create(req.body).then((petData)=> {
+            db.User.findOneAndUpdate(
+                {
+                    _id: req.params.userId
+                }, 
+                {
+                    $push: { pets: petData._id } 
+                }, 
+                { 
+                    new: true 
+                })
+            .then(function (userProfileData) {
+                console.log("this is user profile data", userProfileData);
+                
                 res.json(userProfileData)
             }).catch(function (err) {
                 res.json(err);
             });
+
+        })
+
     });
 
     app.get("/api/session", function (req, res) {

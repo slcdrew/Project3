@@ -18,9 +18,9 @@ $(document).ready(function () {
         console.log("handle submit");
         event.preventDefault();
 
-    var photo //??
+    var PetPhoto = $("#PetPhoto").val().trim();
     var PetName = $("#PetName").val().trim();
-    var PetBreed = $("#PetBreed").val().trim();
+    // var PetBreed = $("#PetBreed").val().trim();
     var PetAge = $("#PetAge").val().trim();
     var PetLocation = $("#PetLocation").val().trim();
     var PetVet = $("#PetVet").val().trim();
@@ -28,14 +28,14 @@ $(document).ready(function () {
     var PetMeds = $("#PetMeds").val().trim();
 
     var newProfile = {
-        photo: photo,
-        PetName: PetName,
-        PetBreed: PetBreed,
-        PetAge: PetAge,
-        PetLocation: PetLocation,
-        PetVet: PetVet,
-        PetCare: PetCare,
-        PetMeds: PetMeds
+        petPhoto: PetPhoto,
+        petName: PetName,
+        // PetBreed: PetBreed,
+        petAge: PetAge,
+        petAddress: PetLocation,
+        petVet: PetVet,
+        petCare: PetCare,
+        petMed: PetMeds
     };
 
         console.log("New Profile " + JSON.stringify(newProfile))
@@ -43,11 +43,10 @@ $(document).ready(function () {
 
         // If we're updating a post run updatePost to update a post
         // Otherwise run submitPost to create a whole new post
-        $.post(`/api/add/${sessionUser.currentUser.id}`, newProfile).then(function (data) {
-        
-                    var profileId = {id: data._id};
-                    console.log("profile id: ", profileId);
-                    window.location.href = "/main.html"
+        $.post(`/api/add/${sessionUser._id}`, newProfile).then(function (data) {   
+            var profileId = {id: data._id};
+            console.log("profile id: ", profileId);
+            window.location.href = "/main.html"
          });
 
 

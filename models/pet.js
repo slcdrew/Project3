@@ -42,6 +42,10 @@ var PetSchema = new Schema({
         type: String,
         allowNull: true
     },
+    petPhoto: {
+        type: String,
+        allowNull: true
+    },
     
     user: {type: mongoose.Schema.Types.ObjectId, ref: "User"} //should this be pet?? 
 

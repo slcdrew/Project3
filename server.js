@@ -3,6 +3,7 @@ const upload = require('jquery-file-upload-middleware');
 const bodyParser = require("body-parser");
 const app = express();
 const multer = require('multer');
+const cloudinary = require('cloudinary');
 const upload2 = multer(); 
 const session = require('express-session');
 const MongoStore = require('connect-mongo')(session);
@@ -52,8 +53,8 @@ app.use(session({
 function userSetup(req, res, next) {
     if (!req.session.user) {
         req.session.user = {}
-        req.session.user.currentUser = {
-            id: null,
+        req.session.user = {
+            _id: null,
             first_name: '',
             last_name: '',
             email: ''
