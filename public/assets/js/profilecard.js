@@ -1,3 +1,5 @@
+//Would like to gather more info abotu the user for their profiles.  This is future concept
+
 
 var user
 //grab id from session
