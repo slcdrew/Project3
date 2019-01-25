@@ -1,226 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta name="apple-mobile-web-app-title" content="Pet-Cern">
 
-        <title>Pet-Cern</title>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="apple-mobile-web-app-title" content="Pet-Cern">
 
-    <!-- Material Icon CDN -->
-         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Pet-Cern</title>
 
-    <!-- Materialize CSS CDN -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <!-- Material Icon CDN -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <!-- Your custom styles -->
-        <link rel="stylesheet" href="./css/style.css">
+  <!-- Materialize CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 
-    <!-- Favicon -->
-        <link rel="icon" type="image/png" sizes="16x16" href="./images/logos/PetCernMini.png"></link>
-    <!-- End of head script and link tags -->
+  <!-- Your custom styles -->
+  <link rel="stylesheet" href="./css/style.css">
 
-    <style>
-      body {
-        display: flex;
-        min-height: 100vh;
-        flex-direction: column;
-        }
-      main {
-        flex: 1 0 auto;
-      }
-    </style>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/logos/PetCernMini.png"></link>
 
-  </head>
+  <!-- End of head script and link tags -->
 
-  <body>
+  <style>
+    body {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+    }
 
-    <header>
+    main {
+      flex: 1 0 auto;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <header>
 
     <!-- Full Size Menu Location -->
     <div class="navbar-fixed">
-        <nav>
-            <div class="nav-wrapper">
-                <div class="container center">
-                    <a href="" class="brand-logo center"><img class="brand-logo" src="./images/logos/petcernlogo.png" width="" height="50px"></a>
-                </div>
-            </div>
-        </nav>
+      <nav>
+        <div class="nav-wrapper">
+          <div class="container center">
+            <a href="main.html" class="brand-logo center">
+              <img class="brand-logo" src="./images/logos/petcernlogo.png" width="" height="50px">
+            </a>
+          </div>
+        </div>
+      </nav>
     </div>
     <!-- End of where full size menu would go -->
 
-    </header>
+  </header>
 
-    <main>
-      <!-- pre loader -->
-      <div class="preloader-background">
-          <div class="preloader-wrapper big active">
-              <div class="spinner-layer spinner-blue-only">
-                  <div class="circle-clipper left">
-                      <div class="circle"></div>
-                  </div>
-                  <div class="gap-patch">
-                      <div class="circle"></div>
-                  </div>
-                  <div class="circle-clipper right">
-                      <div class="circle"></div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  <!-- end -->
-        <!-- Your content here -->
+  <main>
+    <!-- pre loader -->
+    <div class="preloader-background">
+        <div class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-blue-only">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- end -->
+    <form class="" id="profile" >
+    <!-- Your content here -->
     <div>
       <!-- Modal Structure -->
       <div id="add-modal" class="modal">
         <div class="modal-content">
-          <h5 align="center">Lets add the pets you have at home.</h5>
-      
-          <p>
-            Mazim voluptatum at mei. Ei ius praesent constituam.
+          <h4 align="center">Add a pet to your Pet-Cern Profile.</h4>
+
+          <h6>FMazim voluptatum at mei. Ei ius praesent constituam. Ad est putent vivendo consulatu. Id vitae everti sea, ea usu sint assentior democritum, est consul scripta nominavi at.
             <br>
-            <br>Sint ferri eu eos. In sit nemore mentitum. Decore graeco vix id, nam sumo debet ea. Sea ea error appetere. Per diceret feugiat vocibus ex, et dicat evertitur vix. Lucilius pertinacia vix no.</p>
-      
+            <br>Mazim voluptatum at mei. Ei ius praesent constituam. Ad est putent vivendo consulatu. Id vitae everti sea, ea usu sint assentior democritum, est consul scripta nominavi at.</h6>
+
         </div>
         <div class="modal-footer">
-          <a href="#!" class="modal-action modal-close waves-effect blue btn">ADD</a>
+          <a href="#!" class="modal-action modal-close waves-effect blue btn">Add</a>
         </div>
       </div>
-      <!-- Main Card -->
-      <div class="col s12 s7">
-        <div class="card horizontal grey lighten-5">
-          <!-- <div class="card-image">
-                   <img src="./images/addform/calendarPet2Cern.png">
-                 </div> -->
-          <div class="card-stacked">
-            <div class="card-content">
-              <p>What is your pet's name?</p>
-              <br>
-              <br>
-              <input type="text" class="name" id="firstName">
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End  -->
-      <!-- Main Card -->
-      <div class="col s12 s7">
-        <div class="card horizontal grey lighten-5">
-          <!-- <div class="card-image">
-                   <img src="./images/addform/PetCern.png">
-                 </div> -->
-          <div class="card-stacked">
-            <div class="card-content">
-              <p>What is your pet's age?</p>
-              <br>
-              <br>
-              <input type="text" class="lastname" id="lastName">
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End  -->
-      <!-- Main Card -->
-      <div class="col s12 s7">
-        <div class="card horizontal grey lighten-5">
-          <!-- <div class="card-image">
-                   <img src="./images/addform/calendarPetCern2.png">
-                 </div> -->
-          <div class="card-stacked">
-            <div class="card-content">
-              <p>What is your pet's breed/type?</p>
-              <br>
-              <br>
-              <input type="text" class="relationship" id="relationship">
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End  -->
 
-      
-        <!-- Main Card -->
-        <div class="col s12 s7">
-          <div class="card horizontal grey lighten-5">
-            <div class="card-image">
-              <img src="./images/addform/calendarPetCern2.png">
-            </div>
-            <div class="card-stacked">
-              <div class="card-content">
-                <p>When was your pet born?</p>
-                <br>
-                <br>
-                <input type="text" id="birthdate" class="datepicker">
-              </div>
+     <!-- Main Card -->
+     <div class="col s12 s7">
+      <div class="card horizontal profile-pic grey lighten-5">
+        <div class="card-image">
+          <img src="./images/addform/petName.png">
+        </div>
+        <div class="card-stacked">
+          <div class="card-content">
+            <p>What is your pet's name?</p>
+            <div class="input-field col s12">
+              <textarea id="name petName" class="materialize-textarea"></textarea>
             </div>
           </div>
         </div>
-        <!-- End  -->
-        <!-- Main Card -->
-          <div class="col s12 s7">
-            <div class="card horizontal grey lighten-5">
-              <div class="card-image">
-                <img src="./images/addform/locationPetCern.png">
-              </div>
-              <div class="card-stacked">
-                <div class="card-content">
-                  <p>What is your pet's location/address?</p>
-                  <div class="input-field col s12">
-                    <textarea id="address" class="materialize-textarea"></textarea>
+      </div>
+    </div>
+    <!-- End  -->
+
+      <!-- Main Card -->
+      <div class="col s12 s7">
+        <div class="card horizontal profile-pic grey lighten-5">
+          <div class="card-image">
+            <img id="photoPreview" src="./images/addform/AddPetIcon.png">
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <p>Add a picture of your pet!</p>
+              <br>
+              <br>
+
+                <div class="file-field input-field">
+                  <div class="waves-effect blue btn">
+                    <span>
+                      <i class="material-icons">photo_camera</i>
+                    </span>
+                    <input id="photo" type="file" accept="image/*"></input>
+                  </div>
+                  <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text"></input>
                   </div>
                 </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End  -->
+      <!-- Main Card -->
+      <div class="col s12 s7">
+        <div class="card horizontal profile-pic grey lighten-5">
+          <div class="card-image">
+            <img src="./images/addform/calendarPetCern2.png">
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <p>When was your pet born?</p>
+              <br>
+              <br>
+              <input type="text" id="birthdate PetAge" class="datepicker">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End  -->
+      <!-- Main Card -->
+      <div class="col s12 s7">
+        <div class="card horizontal profile-pic grey lighten-5">
+          <div class="card-image">
+            <img src="./images/addform/locationPetCern.png">
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <p>Where is your pet located?</p>
+              <div class="input-field col s12">
+                <textarea id="address PetLocation" class="materialize-textarea"></textarea>
               </div>
             </div>
           </div>
-        <!-- End  -->
-        
-    <!-- submit button -->
-    <div class="row center">
-      <div class="col s12">
-        <button class="waves-effect blue btn" id="submit-profile">
-          <i class="material-icons left">save</i>Save</button>
+        </div>
       </div>
-    </div>
-    <!-- end of submit button -->
-    <!-- Menu -->
-    <div class="fixed-action-btn toolbar ">
-        <a class="btn-floating pulse btn-large blue">
-        <i class="large material-icons">menu</i>
-        </a>
-        <ul>
-        <li class="waves-effect waves-light"><a href="main.html" class="tooltipped" data-position="top" data-delay="50" data-tooltip="Go Home"><i class="material-icons">home</i></a></li>
-        <li class="waves-effect waves-light"><a href="addother.html" class="tooltipped" data-position="top" data-delay="50" data-tooltip="Add a Pet"><i class="material-icons">add</i></a></li>
-        <li class="waves-effect waves-light"><a href="resources.html" class="tooltipped" data-position="top" data-delay="50" data-tooltip="Resources"><i class="material-icons">format_list_bulleted</i></a></li>
-        <li class="waves-effect waves-light"><a href="logout" class="tooltipped" data-position="top" data-delay="50" data-tooltip="Sign Out"><i class="material-icons">close</i></a></li>
-        </ul>
-    </div>
-    <!-- End Menu -->
-    </div>
-    </main>
+      <!-- End  -->
+      <!-- Main Card -->
+      <div class="col s12 s7">
+        <div class="card horizontal profile-pic grey lighten-5">
+          <div class="card-image">
+            <img src="./images/addform/PetCernVetLogo.png">
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <p>Who is your pet's veterinarian (include phone number and address)?</p>
+              <div class="input-field col s12">
+                <textarea id="phone vetAddress PetVet" class="materialize-textarea"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End  -->
+      <!-- Main Card -->
+      <div class="col s12 s7">
+        <div class="card horizontal profile-pic grey lighten-5">
+          <div class="card-image">
+            <img src="./images/addform/PetCernMeds.png">
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <p>Does your pet take any medication? List it here.</p>
+              <div class="input-field col s12">
+                <textarea id="meds PetMeds" class="materialize-textarea"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End  -->
+      <!-- Main Card -->
+      <div class="col s12 s7">
+        <div class="card horizontal profile-pic grey lighten-5">
+          <div class="card-image">
+            <img src="./images/addform/PetCernTemperament.png">
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <p>Does your pet require any special treatment or care considerations?</p>
+              <div class="input-field col s12">
+                <textarea id="temperament PetCare care" class="materialize-textarea"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End  -->
+     
+      <!-- submit button -->
+      <div class="row center">
+        <div class="col s12">
+            <button class="waves-effect blue btn" id="submit-profile" ><i class="material-icons left">save</i>Save</button>
+        </div>
+      </div>
 
-    <!-- Footer -->
-    <footer class="page-footer white">
+    </div>
+    </form>
+  </main>
+  <!-- End Menu -->
+
+  <!-- Footer -->
+  <footer class="page-footer white">
 
     <div class="footer-copyright">
-        <div class="container grey-text" align="center">
-          © 2019 Copyright AMP
-        </div>
+      <div class="container grey-text" align="center">
+        © 2019 Copyright AMP
+      </div>
     </div>
 
-    </footer>
+  </footer>
 
-    <!-- jQuery CDN -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
 
-    <!-- Materialize JS CDN -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <!-- Materialize JS CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
-    <!-- Local JS files -->
-        <script src="./js/index.js"></script>
-        <script src="./js/type.js"></script>
-        <script src="./js/addOther.js"></script>
-        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-        <script src="./js/cloudinary.js"></script>
+  <!-- Local JS files -->
+  <script src="./js/index.js"></script>
+  <script src="./js/type.js"></script>
+  <script src="./js/profile.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="./js/cloudinary.js"></script>
 </body>
+
 </html>
