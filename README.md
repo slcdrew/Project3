@@ -7,6 +7,7 @@ Final Project Pet-Cern
 - body-parser
 - express-session
 - express-handlebars
+- morgan
 - mongo
 - mongodb
 - connect-mongo
