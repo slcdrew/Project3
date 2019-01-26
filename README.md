@@ -10,6 +10,7 @@ Final Project Pet-Cern
 - mongo
 - mongodb
 - connect-mongo
+- mongoose
 - path
 - cloudinary
 
