@@ -2,7 +2,6 @@
 Final Project Pet-Cern
 
 ## Required Modules
-- install
 - express
 - jquery-file-upload-middleware
 - body-parser
