@@ -6,7 +6,6 @@ Final Project Pet-Cern
 - npm i express
 - npm i jquery-file-upload-middleware
 - npm i body-parser
-- npm i multer 
 - npm i express-session
 - npm i express-handlebars
 - npm i mongo
