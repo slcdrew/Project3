@@ -13,6 +13,7 @@ Final Project Pet-Cern
 - mongoose
 - path
 - cloudinary
+- multer
 
 
 Pet-Cern is a web based application that allows users to manage their pets information and share that information with family, friends and be accessible to first responders in the event of a medical emergency.  
