@@ -2,15 +2,21 @@
 Final Project Pet-Cern
 
 ## Required Modules
-- npm install
-- npm i express
-- npm i jquery-file-upload-middleware
-- npm i body-parser
-- npm i express-session
-- npm i express-handlebars
-- npm i mongo
-- npm i mongodb
-- npm i connect-mongo
-- npm i mongoose
-- npm i path
+- install
+- express
+- jquery-file-upload-middleware
+- body-parser
+- express-session
+- express-handlebars
+- mongo
+- mongodb
+- connect-mongo
+- mongoose
+- path
+
+
+Pet-Cern is a web based application that allows users to manage their pets information and share that information with family, friends and be accessible to first responders in the event of a medical emergency.  
+
+
+https://petcern.herokuapp.com/index
 
