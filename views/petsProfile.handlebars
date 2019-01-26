@@ -1,0 +1,134 @@
+<main>
+  <!-- pre loader -->
+  <div class="preloader-background">
+    <div class="preloader-wrapper big active">
+      <div class="spinner-layer spinner-blue-only">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div>
+        <div class="gap-patch">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end -->
+  <!-- Your content here -->
+  <div>
+    <!-- Main Card -->
+    <div class="row">
+      <div class="col s3">
+        <div class="card horizontal">
+          <div class="card-image">
+             <img src={{petData.petPhoto}}>
+          </div>
+          <div class="col s9">
+            <div class="card-stacked">
+              <div class="card-content">
+                <h5 class="your-name">{{petData.petName}}</h5>
+              </div>
+              <!-- end T2 content -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12 profile-tiers pop">
+        <ul class="collapsible popout" data-collapsible="accordion">
+          <li>
+            <!-- Tier 3 Info -->
+            <div class="collapsible-header"><i class="material-icons">add</i>Pet Info</div>
+            <div class="collapsible-body">
+              <!-- 1 -->
+              <br>
+              <br>
+              <br>
+              <h3>Year Born</h3>
+              <b><span>{{petData.petAge}}</span></b>
+              <br>
+              <br>
+              <div class="divider"></div>
+              <br>
+              <br>
+              <!-- 2 -->
+
+              <br>
+              <br>
+              <br>
+              <h3>Pet Address</h3>
+              <b><span>{{petData.petAddress}}</span></b>
+              <br>
+              <br>
+              <div class="divider"></div>
+              <br>
+              <br>
+              <!-- 3 -->
+
+              <br>
+              <br>
+              <br>
+              <h3>Pet's Veterinarian</h3>
+              <b><span>{{petData.petVet}}</span></b>
+              <br>
+              <br>
+                  <div class="divider"></div>
+              <br>
+              <br>
+              <br>
+              <!-- 4 -->
+              <br>
+              <br>
+              <br>
+              <h3>Pet's Care</h3>
+              <b><span>{{petData.petCare}}</span></b>
+              <br>
+              <br>
+   
+              <div class="divider"></div>
+              <br>
+              <br>
+
+              <br>
+              <!-- 5 -->
+              <br>
+              <br>
+              <br>
+              <h3>Pet's Medications</h3>
+              <b><span>{{petData.petMed}}</span></b>
+              <br>
+              <br>
+
+              <div class="divider"></div>
+              <br>
+              <br>
+              <span>Click the SAVE button ></span><a href="/main" class="btn-floating black right" type="submit" name="action"><i class="material-icons left">keyboard_arrow_left</i></a>
+              <br>
+            </div>
+          </li>
+
+      </div>
+    </div>
+    <!-- End of Card  -->
+
+    <div class="fixed-action-btn toolbar ">
+      <a class="btn-floating pulse btn-large blue">
+        <i class="large material-icons">menu</i>
+      </a>
+      <ul>
+        <li class="waves-effect waves-light"><a href="/main" class="tooltipped" data-position="top" data-delay="50"
+            data-tooltip="Go Home"><i class="material-icons">home</i></a></li>
+        <li class="waves-effect waves-light"><a href="/addother" class="tooltipped" data-position="top" data-delay="50"
+            data-tooltip="Add a Love One"><i class="material-icons">add</i></a></li>
+        <li class="waves-effect waves-light"><a href="/resources" class="tooltipped" data-position="top" data-delay="50"
+            data-tooltip="Resources"><i class="material-icons">format_list_bulleted</i></a></li>
+        <li class="waves-effect waves-light"><a href="/logout" class="tooltipped" data-position="top" data-delay="50"
+            data-tooltip="Sign Out"><i class="material-icons">close</i></a></li>
+      </ul>
+    </div>
+  </div>
+</main>

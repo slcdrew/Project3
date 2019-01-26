@@ -1,0 +1,57 @@
+<main>
+  <!-- pre loader -->
+  <div class="preloader-background">
+    <div class="preloader-wrapper big active">
+      <div class="spinner-layer spinner-blue-only">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div>
+        <div class="gap-patch">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end -->
+  <div>
+    <!-- Main Card -->
+
+    <div class="col s12 s7" id="cardStuff">
+
+    </div>
+
+    <!-- End  -->
+
+    <!-- Feature Discovery -->
+    <!-- Tap Target Structure -->
+    <div class="tap-target blue lighten-4" data-activates="menu">
+      <div class="tap-target-content">
+        <h5>Welcome!</h5>
+        <p>Using the expandable menu naviagte through the site! Add any new pets and keep your profile up to date!</p>
+        <a href="#!" onclick="$('.tap-target').tapTarget('close')">Dismiss</a>
+      </div>
+    </div>
+    <!-- End of Feature Discovery -->
+
+    <div class="fixed-action-btn toolbar ">
+      <a class="btn-floating pulse btn-large blue" id="menu">
+        <i class="large material-icons">menu</i>
+      </a>
+      <ul>
+        <li class="waves-effect waves-light"><a href="/main" class="tooltipped" data-position="top" data-delay="50"
+            data-tooltip="Home"><i class="material-icons">home</i></a></li>
+        <li class="waves-effect waves-light"><a href="/addother" class="tooltipped" data-position="top" data-delay="50"
+            data-tooltip="Add a Pet"><i class="material-icons">add</i></a></li>
+        <li class="waves-effect waves-light"><a href="/resources" class="tooltipped" data-position="top" data-delay="50"
+            data-tooltip="Resources"><i class="material-icons">format_list_bulleted</i></a></li>
+        <li class="waves-effect waves-light"><a href="/logout" class="tooltipped" data-position="top" data-delay="50"
+            data-tooltip="Sign Out"><i class="material-icons">close</i></a></li>
+      </ul>
+    </div>
+  </div>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script src="./js/main.js"></script>

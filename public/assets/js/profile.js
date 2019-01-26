@@ -19,6 +19,7 @@ $(document).ready(function () {
         event.preventDefault();
 
     var PetPhoto = $("#PetPhoto").val().trim();
+    var PetPhotoURL = $("#PetPhotoURL").val().trim();
     var PetName = $("#PetName").val().trim();
     // var PetBreed = $("#PetBreed").val().trim();
     var PetAge = $("#PetAge").val().trim();
@@ -27,8 +28,17 @@ $(document).ready(function () {
     var PetCare = $("#PetCare").val().trim();
     var PetMeds = $("#PetMeds").val().trim();
 
+    function photo(PetPhoto, PetPhotoURL){
+        //pet photo is and empty string
+        if(PetPhoto === ""){
+            return PetPhotoURL
+        } else {
+            return PetPhoto
+        }
+    }
+
     var newProfile = {
-        petPhoto: PetPhoto,
+        petPhoto: photo(PetPhoto, PetPhotoURL),
         petName: PetName,
         // PetBreed: PetBreed,
         petAge: PetAge,
@@ -46,7 +56,7 @@ $(document).ready(function () {
         $.post(`/api/add/${sessionUser._id}`, newProfile).then(function (data) {   
             var profileId = {id: data._id};
             console.log("profile id: ", profileId);
-            window.location.href = "/main.html"
+            window.location.href = "/main"
          });
 
 

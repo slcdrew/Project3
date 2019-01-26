@@ -1,13 +1,15 @@
 const express = require("express");
 const upload = require('jquery-file-upload-middleware');
 const bodyParser = require("body-parser");
-const app = express();
 const multer = require('multer');
 const cloudinary = require('cloudinary');
-const upload2 = multer(); 
+// var morgan = require('morgan');
 const session = require('express-session');
 const MongoStore = require('connect-mongo')(session);
+const upload2 = multer(); 
+const app = express();
 
+// app.use(morgan())
 var mongoose = require("mongoose");
 
 const path = require('path');
@@ -76,18 +78,20 @@ var auth = function (req, res, next) {
 };
 
 //Get Home Page
-app.get('/', function (req, res, next) {
-    console.log("Server.js Session", req.session);
+// app.get('/', function (req, res, next) {
+//     console.log("Server.js Session", req.session);
     
     
-    res.sendFile(path.join(__dirname + '/public/index.html'));
-});
+//     res.sendFile(path.join(__dirname + '/public/index.html'));
+// });
 
 var exphbs = require("express-handlebars");
 
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
+
+require("./routes/html-routes.js")(app);
 require("./routes/api-routes.js")(app);
 
 app.listen(PORT, function () {

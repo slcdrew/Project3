@@ -63,9 +63,9 @@ module.exports = function (app) {
 
     app.get("/main/pet", petController.find);
 
-    app.delete("/delete/pet", petController.delete);
+    app.delete("/delete/pet/:id", petController.delete);
 
-    app.put("/update/pet", petController.update);
+    app.put("/update/pet/:id", petController.update);
 
 
     function checkSignIn(req, res) {
@@ -95,7 +95,7 @@ module.exports = function (app) {
     app.post('/api/login', userController.find)
 
     app.get('/logout', function (req, res) {
-        // req.session.user = {}
+        req.session.user = {}
         req.session.user.loggedIn = false;
         req.session.user.isAdmin = false;
         // res.json(req.session.user)
@@ -107,54 +107,54 @@ module.exports = function (app) {
 
 
 
-    app.get('/profile.html', function (req, res) {
-        res.sendFile(path.join(__dirname + '/../public/profile.html'));
-    });
+    // app.get('/profile.html', function (req, res) {
+    //     res.sendFile(path.join(__dirname + '/../public/profile.html'));
+    // });
 
 
 
-    // app.get('/logout', function (req, res) {
+    // // app.get('/logout', function (req, res) {
+    // //     res.sendFile(path.join(__dirname + '/../public/index.html'));
+    // // });
+
+    // app.get('/index.html', function (req, res) {
     //     res.sendFile(path.join(__dirname + '/../public/index.html'));
     // });
 
-    app.get('/index.html', function (req, res) {
-        res.sendFile(path.join(__dirname + '/../public/index.html'));
-    });
+    // app.get('/add.html', function (req, res) {
+    //     res.sendFile(path.join(__dirname + '/../public/add.html'));
+    // });
 
-    app.get('/add.html', function (req, res) {
-        res.sendFile(path.join(__dirname + '/../public/add.html'));
-    });
+    // app.get('/addother.html', function (req, res) {
+    //     res.sendFile(path.join(__dirname + '/../public/addother.html'));
+    // });
 
-    app.get('/addother.html', function (req, res) {
-        res.sendFile(path.join(__dirname + '/../public/addother.html'));
-    });
+    // app.get('/aspca.html', function (req, res) {
+    //     res.sendFile(path.join(__dirname + '/../public/aspca.html'));
+    // });
 
-    app.get('/aspca.html', function (req, res) {
-        res.sendFile(path.join(__dirname + '/../public/aspca.html'));
-    });
+    // app.get('/resources.html', function (req, res) {
+    //     res.sendFile(path.join(__dirname + '/../public/resources.html'));
+    // });
 
-    app.get('/resources.html', function (req, res) {
-        res.sendFile(path.join(__dirname + '/../public/resources.html'));
-    });
-
-    app.get('/main.html', function (req, res) {
-        res.sendFile(path.join(__dirname + '/../public/main.html'));
-    });
+    // app.get('/main.html', function (req, res) {
+    //     res.sendFile(path.join(__dirname + '/../public/main.html'));
+    // });
     /////////////////////////////////////////////////////////////////////////////////
 
 
-    app.post("/getprofile", profileController.find);
+    // app.post("/getprofile", profileController.find);
 
-    app.get("/updatedprofile/:id", function(req, res) {
-        console.log("updatedprofile req.params: " , req.params.id);
-    } )
+    // app.get("/updatedprofile/:id", function(req, res) {
+    //     console.log("updatedprofile req.params: " , req.params.id);
+    // } )
 
-    // app.get("/main/:id", profileController.find);
+    // // app.get("/main/:id", profileController.find);
 
-    app.delete("/delete/profile", profileController.delete);
+    // app.delete("/delete/profile", profileController.delete);
     
     
     app.get("*", function (req, res) {
-        res.redirect("/index.html")
+        res.redirect("/index")
     });
 }

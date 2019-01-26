@@ -22,6 +22,7 @@ module.exports = {
         Pet.remove({
         _id: req.params.id
         }).then(function(data) {
+            console.log("this is delete route pet data ", data);
         res.json(data);
         }).catch(function(err) {
         res.json(err);
@@ -29,9 +30,18 @@ module.exports = {
     },
 
     update: function(req, res) {
-        Pet.update({
-        _id: req.params.id
-        }).then(function(data) {
+        console.log(req.body);
+        Pet.findOneAndUpdate(
+            {
+                _id: req.params.id
+            },
+            {
+                $set: req.body 
+            },
+            {
+                new: true
+            }
+        ).then(function(data) {
         res.json(data);
         }).catch(function(err) {
         res.json(err);

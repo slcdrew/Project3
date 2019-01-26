@@ -1,0 +1,183 @@
+<main>
+  <!-- pre loader -->
+  <div class="preloader-background">
+    <div class="preloader-wrapper big active">
+      <div class="spinner-layer spinner-blue-only">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div>
+        <div class="gap-patch">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end -->
+  <form class="" id="profile">
+    <!-- Your content here -->
+    <div>
+      <!-- Modal Structure -->
+      <div id="add-modal" class="modal">
+        <div class="modal-content">
+          <h4 align="center">Add a pet to your Pet-Cern Profile.</h4>
+
+          <h6>FMazim voluptatum at mei. Ei ius praesent constituam. Ad est putent vivendo consulatu. Id vitae everti
+            sea, ea usu sint assentior democritum, est consul scripta nominavi at.
+            <br>
+            <br>Mazim voluptatum at mei. Ei ius praesent constituam. Ad est putent vivendo consulatu. Id vitae everti
+            sea, ea usu sint assentior democritum, est consul scripta nominavi at.</h6>
+
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-action modal-close waves-effect blue btn">Add</a>
+        </div>
+      </div>
+
+      <!-- Main Card -->
+      <div class="col s12 s7">
+        <div class="card horizontal profile-pic grey lighten-5">
+          <div class="card-image">
+            <img src="./images/addform/petName.png">
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <p>What is your pet's name?</p>
+              <div class="input-field col s12">
+                <textarea id="PetName" class="materialize-textarea"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End  -->
+
+      <!-- Main Card -->
+      <div class="col s12 s7">
+        <div class="card horizontal profile-pic grey lighten-5">
+          <div class="card-image">
+            <img id="photoPreview" src="./images/addform/AddPetIcon.png">
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <p>Add a picture of your pet!</p>
+              <br>
+              <br>
+
+              <div class="file-field input-field">
+                <div class="waves-effect blue btn">
+                  <span>
+                    <i class="material-icons">photo_camera</i>
+                  </span>
+                  <input id="PetPhoto" type="file" accept="image/*"></input>
+                </div>
+                <div class="file-path-wrapper">
+                  <input id="PetPhotoURL" class="file-path validate" type="text"></input>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End  -->
+      <!-- Main Card -->
+      <div class="col s12 s7">
+        <div class="card horizontal profile-pic grey lighten-5">
+          <div class="card-image">
+            <img src="./images/addform/calendarPetCern2.png">
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <p>When was your pet born?</p>
+              <br>
+              <br>
+              <input type="text" id="PetAge" class="datepicker">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End  -->
+      <!-- Main Card -->
+      <div class="col s12 s7">
+        <div class="card horizontal profile-pic grey lighten-5">
+          <div class="card-image">
+            <img src="./images/addform/locationPetCern.png">
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <p>Where is your pet located?</p>
+              <div class="input-field col s12">
+                <textarea id="PetLocation" class="materialize-textarea"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End  -->
+      <!-- Main Card -->
+      <div class="col s12 s7">
+        <div class="card horizontal profile-pic grey lighten-5">
+          <div class="card-image">
+            <img src="./images/addform/PetCernVetLogo.png">
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <p>Who is your pet's veterinarian (include phone number and address)?</p>
+              <div class="input-field col s12">
+                <textarea id="PetVet" class="materialize-textarea"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End  -->
+      <!-- Main Card -->
+      <div class="col s12 s7">
+        <div class="card horizontal profile-pic grey lighten-5">
+          <div class="card-image">
+            <img src="./images/addform/PetCernMeds.png">
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <p>Does your pet take any medication? List it here.</p>
+              <div class="input-field col s12">
+                <textarea id="PetMeds" class="materialize-textarea"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End  -->
+      <!-- Main Card -->
+      <div class="col s12 s7">
+        <div class="card horizontal profile-pic grey lighten-5">
+          <div class="card-image">
+            <img src="./images/addform/PetCernTemperament.png">
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <p>Does your pet require any special treatment or care considerations?</p>
+              <div class="input-field col s12">
+                <textarea id="PetCare" class="materialize-textarea"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End  -->
+
+      <!-- submit button -->
+      <div class="row center">
+        <div class="col s12">
+          <button class="waves-effect blue btn" id="submit-profile"><i class="material-icons left">save</i>Save</button>
+        </div>
+      </div>
+
+    </div>
+  </form>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script src="./js/profile.js"></script>
